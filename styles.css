@@ -55,8 +55,41 @@ padding: 0.5rem;
 padding: 0.5rem 0.75rem;
 cursor: pointer;
 }
+
+
+/* Une tâche = ligne avec texte + bouton supprimer */
+.app-trello__task-list li.app-trello__task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #eaeaea;
+  border-radius: 0.5rem;
+}
+
+/* Texte de la tâche */
+.app-trello__task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+/* Bouton supprimer */
+.app-trello__task-delete {
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+/* Effet au survol du bouton supprimer */
+.app-trello__task-delete:hover {
+  color: #b00020;
+}
+
 /* Tâche en cours de déplacement */
-.app-tello__task-list li.is-dragging {
+.app-trello__task.is-dragging {
   opacity: 0.6;
   cursor: grabbing;
 }
