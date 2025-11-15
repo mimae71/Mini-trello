@@ -30,28 +30,40 @@ body {
   text-align: center;
 }
 
-.app-tello__task-list {
+.app-trello__task-list {
   list-style: none;
   padding: 0;
   margin: 1.5rem 0;
 }
 
-.app-tello__task-list li {
+.app-trello__task-list li {
   background: #eaeaea;
   padding: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
-.app-tello__task-form {
+.app-trello__task-form {
   display: flex;
   gap: 0.5rem;
 }
-.app-tello__task-form-input{
+.app-trello__task-form-input{
 flex : 1;
 padding: 0.5rem;
 
 }
-.app-tello__task-form-btn{
+.app-trello__task-form-btn{
 padding: 0.5rem 0.75rem;
 cursor: pointer;
+}
+/* Tâche en cours de déplacement */
+.app-tello__task-list li.is-dragging {
+  opacity: 0.6;
+  cursor: grabbing;
+}
+
+/* Colonne survolée pendant un drag */
+.app-trello__column--highlight {
+  outline: 2px dashed #007bff;
+  outline-offset: 4px;
+  background: #f0f6ff;
 }
