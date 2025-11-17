@@ -66,6 +66,7 @@ cursor: pointer;
   padding: 0.5rem 0.75rem;
   background: #eaeaea;
   border-radius: 0.5rem;
+  cursor: grab;
 }
 
 /* Texte de la tâche */
